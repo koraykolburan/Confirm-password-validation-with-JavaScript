@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Confirm Password Validation with JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <center>
+      <h1></h1>
+      <h3>Verify valid password!</h3>
+      <form>
+        <td>Insert your old password!</td>
+        <input type="password" name="" id="" />
+      </form>
+      <form onsubmit="return verifyPassword()">
+        <td>Enter Your New Password</td>
+        <input type="password" value="" id="pswd" /> <br />
+        <span id="message"></span><br />
+        <br />
+        <input type="submit" value="Submit" id="inpt" />
+        <button type="reset" value="Reset" id="btn">Reset</button> <br />
+      </form>
+    </center>
+    <div>
+      <h2>New Password Rules!</h2>
+      <ul>
+        <li>Password length must be at least 8 characters.</li>
+        <li>Password length must not exceed 15 characters.</li>
+        <li>Your password needs at least one lower case letter.</li>
+        <li>Your password needs at least one upper case letter.</li>
+        <li>Your password needs a number.</li>
+      </ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
